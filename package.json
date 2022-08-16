@@ -1,0 +1,28 @@
+{
+  "name": "@mpxjs/eslint-config",
+  "version": "1.0.0",
+  "description": "Mpx's ESLint config presets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpx-ecology/eslint-config.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "pagnkelly@github.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpx-ecology/eslint-config/issues"
+  },
+  "homepage": "https://github.com/mpx-ecology/eslint-config#readme",
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "dependencies": {
+    "eslint-plugin-mpx": "^0.0.23"
+  }
+}
