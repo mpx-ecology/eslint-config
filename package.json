@@ -25,6 +25,12 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.33.1",
     "@typescript-eslint/parser": "^5.33.1",
+    "eslint-config-standard": "^17.0.0",
     "eslint-plugin-mpx": "0.2.0"
+  },
+  "devDependencies": {
+    "@mpxjs/eslint-config": "*",
+    "eslint": "^8.22.0",
+    "typescript": "^4.7.4"
   }
 }
