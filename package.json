@@ -11,7 +11,7 @@
     "url": "git+https://github.com/mpx-ecology/eslint-config.git"
   },
   "keywords": [
-    "eslint"
+    "eslint-config"
   ],
   "author": "pagnkelly@github.com",
   "license": "ISC",
@@ -23,6 +23,8 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "eslint-plugin-mpx": "^0.0.23"
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "eslint-plugin-mpx": "0.2.0"
   }
 }
