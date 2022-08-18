@@ -1,5 +1,5 @@
 # @mpxjs/eslint-config
-集成js和ts的推荐(recommended)配置
+基于[eslint-plugin-mpx](https://github.com/mpx-ecology/eslint-plugin-mpx)插件,集成js和ts的推荐(recommended)配置
 ## Usage
 
 ### Install
