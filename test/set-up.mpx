@@ -1,0 +1,24 @@
+<script setup>
+import { reactive, onLoad } from '@mpxjs/core'
+const state = reactive({ count: 0 })
+
+onLoad(() => {
+  console.log('onLoad lifetime trigger')
+})
+
+let props;
+let a = defineProps({
+  a: 123
+})
+
+const baseStyle = {
+  color: 'red'
+}
+
+function increment() {
+  state.count++
+}
+</script>
+<template>
+  <view bindtap="increment">{{baseStyle}}</view>
+</template>
