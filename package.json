@@ -1,6 +1,6 @@
 {
   "name": "@mpxjs/eslint-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Mpx's ESLint config presets",
   "main": "index.js",
   "scripts": {
