@@ -39,7 +39,6 @@ module.exports = {
         'import/order': 'error',
         'import/first': 'error',
         'import/no-mutable-exports': 'error',
-        'import/named': 'error',
         'import/no-absolute-path': 'off'
       }
     }
