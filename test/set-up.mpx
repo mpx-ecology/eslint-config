@@ -1,4 +1,5 @@
 <script setup>
+// 为了不把这些import的内容导出去 所有模版需要的变量将都在defineExpose方法导出，mpx/script-setup-uses-vars规则则无效了
 import { reactive, onLoad } from '@mpxjs/core'
 const state = reactive({ count: 0 })
 
