@@ -1,3 +1,14 @@
+const importRules = {
+  'import/order': 'error',
+  'import/first': 'error',
+  'import/no-mutable-exports': 'error',
+  'import/no-named-as-default-member': 'off',
+  'import/no-named-as-default': 'off',
+  'import/namespace': 'off',
+  'import/no-unresolved': 'off',
+  'import/no-absolute-path': 'off'
+}
+
 module.exports = {
   parserOptions: {
     parser: '@typescript-eslint/parser'
@@ -6,11 +17,7 @@ module.exports = {
   rules: {
     camelcase: ['error', { 'allow': ['__mpx_mode__', '__mpx_env__'] }],
     // 'mpx/script-setup-uses-vars': 2,
-    'import/order': 'error',
-    'import/first': 'error',
-    'import/no-mutable-exports': 'error',
-    'import/no-unresolved': 'off',
-    'import/no-absolute-path': 'off'
+    ...importRules
   },
   overrides: [
     {
@@ -36,10 +43,7 @@ module.exports = {
         'plugin:import/recommended'
       ],
       rules: {
-        'import/order': 'error',
-        'import/first': 'error',
-        'import/no-mutable-exports': 'error',
-        'import/no-absolute-path': 'off'
+        ...importRules
       }
     }
   ]

@@ -19,6 +19,10 @@ const baseStyle = {
 function increment() {
   state.count++
 }
+defineExpose({
+  increment,
+  baseStyle
+})
 </script>
 <template>
   <view bindtap="increment">{{baseStyle}}</view>
