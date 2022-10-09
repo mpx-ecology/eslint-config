@@ -5,7 +5,7 @@ module.exports = {
   extends: ['eslint:recommended', 'plugin:import/recommended', 'plugin:mpx/mpx-essential'],
   rules: {
     camelcase: ['error', { 'allow': ['__mpx_mode__', '__mpx_env__'] }],
-    'mpx/script-setup-uses-vars': 2,
+    // 'mpx/script-setup-uses-vars': 2,
     'import/order': 'error',
     'import/first': 'error',
     'import/no-mutable-exports': 'error',
