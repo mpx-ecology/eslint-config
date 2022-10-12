@@ -1,6 +1,6 @@
 {
   "name": "@mpxjs/eslint-config-monorepo",
-  "version": "1.0.7",
+  "version": "1.0.5",
   "description": "Mpx's ESLint config presets",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/mpx-ecology/eslint-config#readme",
   "devDependencies": {
     "@mpxjs/eslint-config": "*",
+    "bumpp": "^8.2.1",
     "eslint": "^8.22.0"
   }
 }
