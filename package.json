@@ -1,6 +1,7 @@
 {
   "name": "@mpxjs/eslint-config-monorepo",
   "version": "1.0.5",
+  "private": true,
   "description": "Mpx's ESLint config presets",
   "main": "index.js",
   "scripts": {
