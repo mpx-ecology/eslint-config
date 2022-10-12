@@ -1,10 +1,10 @@
 {
-  "name": "@mpxjs/eslint-config-monorepo",
+  "name": "@mpxjs/eslint-config-ts",
   "version": "1.0.4",
   "description": "Mpx's ESLint config presets",
   "main": "index.js",
   "scripts": {
-    "release": "pnpm -r publish --access public"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -19,8 +19,16 @@
     "url": "https://github.com/mpx-ecology/eslint-config/issues"
   },
   "homepage": "https://github.com/mpx-ecology/eslint-config#readme",
+  "peerDependencies": {
+    "eslint": ">=7.4.0",
+    "typescript": ">=3.9"
+  },
+  "dependencies": {
+    "@mpxjs/eslint-config": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1"
+  },
   "devDependencies": {
-    "@mpxjs/eslint-config": "*",
     "eslint": "^8.22.0"
   }
 }
