@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    './standard', 
+    './standard',
     'eslint:recommended',
     'plugin:mpx/mpx-essential'
   ],
@@ -20,10 +20,10 @@ module.exports = {
     '__snapshots__',
     '!.github',
     '!.vitepress',
-    '!.vscode',
+    '!.vscode'
   ],
   rules: {
-    camelcase: ['error', { 'allow': ['__mpx_mode__', '__mpx_env__'] }]
+    camelcase: ['error', { allow: ['__mpx_mode__', '__mpx_env__'] }]
     // 'mpx/script-setup-uses-vars': 2
   },
   overrides: [

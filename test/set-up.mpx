@@ -6,8 +6,8 @@ onLoad(() => {
   console.log('onLoad lifetime trigger')
 })
 
-let props;
-let a = defineProps({
+let props
+const a = defineProps({
   a: 123
 })
 
