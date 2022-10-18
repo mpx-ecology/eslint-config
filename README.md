@@ -16,6 +16,15 @@ pnpm add -D eslint @mpxjs/eslint-config
 }
 ```
 
+### ts `.eslintrc`
+
+
+```json
+{
+  "extends": "@mpxjs/eslint-config-ts"
+}
+```
+
 ### Add script for package.json
 
 For example:
