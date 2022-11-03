@@ -17,12 +17,12 @@ importers:
       '@mpxjs/eslint-config': file:.
       eslint: ^8.22.0
       eslint-plugin-import: ^2.26.0
-      eslint-plugin-mpx: 0.2.1
+      eslint-plugin-mpx: ^0.2.2
       eslint-plugin-n: ^15.2.4
       eslint-plugin-promise: ^6.0.0
     dependencies:
       eslint-plugin-import: 2.26.0_eslint@8.22.0
-      eslint-plugin-mpx: 0.2.1_eslint@8.22.0
+      eslint-plugin-mpx: 0.2.2_eslint@8.22.0
       eslint-plugin-n: 15.2.4_eslint@8.22.0
       eslint-plugin-promise: 6.0.0_eslint@8.22.0
     devDependencies:
@@ -559,8 +559,8 @@ packages:
       tsconfig-paths: 3.14.1
     dev: false
 
-  /eslint-plugin-mpx/0.2.1_eslint@8.22.0:
-    resolution: {integrity: sha512-I+Rd8iLmy7fUQPUxBlKy0FLacaG/350azvm3erQadOMjiYqHjWtwu24HSATEd9JIn9K1e6J1mWvc4bRruynkdw==}
+  /eslint-plugin-mpx/0.2.2_eslint@8.22.0:
+    resolution: {integrity: sha512-Zgx5Flz9l4TQooiNkmNbM5c9rnwS1FNTpMKrTakF3DbddeN+GauZjn1yEUZj4wKfieozzLVlbDgeDjfYq2zbZA==}
     engines: {node: '>=8.10'}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
