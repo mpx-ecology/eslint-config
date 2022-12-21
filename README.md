@@ -5,7 +5,10 @@
 ### Install
 
 ```bash
+# js版本
 pnpm add -D eslint @mpxjs/eslint-config
+# ts版本
+pnpm add -D eslint @mpxjs/eslint-config-ts
 ```
 
 ### Config `.eslintrc`
