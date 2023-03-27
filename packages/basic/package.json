@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-mpx": "^0.2.3",
+    "eslint-plugin-mpx": "^0.2.9",
     "eslint-plugin-n": "^15.2.4",
     "eslint-plugin-promise": "^6.0.0"
   },
