@@ -38,6 +38,12 @@ module.exports = {
       extends: [
         'eslint:recommended'
       ]
+    },
+    {
+      files: ['**/*.wxs'],
+      rules: {
+        'object-shorthand': ['error', 'never']
+      }
     }
   ]
 }
