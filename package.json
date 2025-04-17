@@ -1,11 +1,18 @@
 {
-  "name": "@mpxjs/eslint-config-monorepo",
+  "name": "@mpxjs/eslint-config",
+  "type": "module",
   "version": "1.0.10",
   "private": true,
   "description": "Mpx's ESLint config presets",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "scripts": {
-    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
+    "stub": "tsup",
+    "watch": "tsup --watch",
+    "release": "bumpp && pnpm publish"
   },
   "repository": {
     "type": "git",
@@ -21,8 +28,18 @@
   },
   "homepage": "https://github.com/mpx-ecology/eslint-config#readme",
   "devDependencies": {
-    "@mpxjs/eslint-config": "*",
+    "@antfu/ni": "^24.3.0",
+    "@mpxjs/eslint-config": "workspace:*",
     "bumpp": "^8.2.1",
-    "eslint": "^8.22.0"
+    "eslint": "^9.24.0",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.1"
+  },
+  "dependencies": {
+    "eslint-flat-config-utils": "^2.0.1",
+    "eslint-plugin-mpx": "0.2.20-3",
+    "local-pkg": "^1.1.1"
   }
 }
