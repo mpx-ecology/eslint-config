@@ -10,8 +10,13 @@
     ".": "./dist/index.js"
   },
   "scripts": {
+    "build": "nr gen && tsup --clean --dts",
+    "gen": "tsx scripts/typegen.ts",
+    "dev": "npx @eslint/config-inspector --config eslint.config.ts",
     "stub": "tsup",
     "watch": "tsup --watch",
+    "lint": "eslint",
+    "test": "vitest",
     "release": "bumpp && pnpm publish"
   },
   "repository": {
@@ -29,9 +34,13 @@
   "homepage": "https://github.com/mpx-ecology/eslint-config#readme",
   "devDependencies": {
     "@antfu/ni": "^24.3.0",
+    "@eslint/config-inspector": "^1.0.2",
+    "@mpxjs/core": "^2.10.4",
     "@mpxjs/eslint-config": "workspace:*",
+    "@types/node": "^22.14.1",
     "bumpp": "^8.2.1",
     "eslint": "^9.24.0",
+    "eslint-typegen": "^2.1.0",
     "tsup": "^8.4.0",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3",

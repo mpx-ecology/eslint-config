@@ -14,6 +14,13 @@ export type TypedFlatConfigItem = Omit<Linter.Config<Linter.RulesRecord & Rules>
   plugins?: Record<string, any>
 }
 
+export interface OptionsOverrides {
+  overrides?: TypedFlatConfigItem['rules']
+}
+
+export interface OptionsMpx extends OptionsOverrides {
+  type?:  'compositionApi' | 'options'
+}
 export interface OptionsConfig {
   /**
    * Enable gitignore support.
@@ -69,12 +76,11 @@ export interface OptionsConfig {
   test?: boolean
 
   /**
-   * Enable Vue support.
+   * Enable Mpx support.
    *
    * @default auto-detect based on the dependencies
    */
-  vue?: boolean
-  mpx?: boolean
+  mpx?: boolean | OptionsMpx
   /**
    * Enable JSONC support.
    *

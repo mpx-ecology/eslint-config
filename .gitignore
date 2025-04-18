@@ -80,3 +80,4 @@ dist
 *.lerna_backup
 
 src/typegen.d.ts
+.eslint-config-inspector
