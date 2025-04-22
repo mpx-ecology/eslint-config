@@ -1,0 +1,37 @@
+<template>
+  <view>
+    <view>{{ greeting }}</view>
+    <view bindtap="incrementCounter">Click me!</view>
+    <view>Counter: {{ counter }}</view>
+  </view>
+</template>
+
+<script setup>
+import { ref } from '@mpxjs/core'
+
+const greeting = ref(`Hello, Mpx!${  1}`);
+let counter = ref(0)
+let doubled = computed(() => counter.value * 2);
+
+const incrementCounter = () => {
+  counter.value++;
+};
+let _zero = doubled + counter
+
+defineExpose({
+  greeting,
+  incrementCounter,
+  counter,
+  _zero
+})
+</script>
+
+<style lang="stylus">
+
+</style>
+
+<script type="application/json">
+  {
+    "usingComponents": {}
+  }
+</script>
