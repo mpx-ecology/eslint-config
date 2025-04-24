@@ -1,5 +1,6 @@
 # @mpxjs/eslint-config
 基于[eslint-plugin-mpx](https://github.com/mpx-ecology/eslint-plugin-mpx)插件,集成js和ts的推荐(recommended)配置
+升级了eslintv9版本支持flatConfig。
 ## Usage
 
 ### Install
@@ -7,25 +8,21 @@
 ```bash
 # js版本
 pnpm add -D eslint @mpxjs/eslint-config
-# ts版本
-pnpm add -D eslint @mpxjs/eslint-config-ts
 ```
 
-### Config `.eslintrc`
+### Config `eslint.config.js`
 
-```json
-{
-  "extends": "@mpxjs"
-}
-```
+```js
 
-### ts `.eslintrc`
+import { mpxConfig } from '@mpxjs/eslint-config'
 
-
-```json
-{
-  "extends": "@mpxjs/eslint-config-ts"
-}
+export default mpxConfig(
+  {
+    mpx: true,
+    vue: true,
+    typescript: true
+  }
+)
 ```
 
 ### Add script for package.json
