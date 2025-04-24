@@ -8,6 +8,9 @@
   "exports": {
     ".": "./dist/index.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "nr gen && tsup --clean --dts",
     "gen": "tsx scripts/typegen.ts",
