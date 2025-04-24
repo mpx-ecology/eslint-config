@@ -31,6 +31,9 @@
     "url": "https://github.com/mpx-ecology/eslint-config/issues"
   },
   "homepage": "https://github.com/mpx-ecology/eslint-config#readme",
+  "peerDependencies": {
+    "eslint": "^9.10.0"
+  },
   "devDependencies": {
     "@antfu/ni": "^24.3.0",
     "@eslint/config-inspector": "^1.0.2",
