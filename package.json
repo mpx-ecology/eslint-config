@@ -61,10 +61,10 @@
     "eslint-plugin-mpx": "0.2.20-4",
     "eslint-plugin-n": "^17.17.0",
     "eslint-plugin-vue": "^10.0.0",
-    "jiti": "^2.4.2",
     "globals": "^16.0.0",
+    "jiti": "^2.4.2",
     "local-pkg": "^1.1.1",
-    "mpx-eslint-parser": "^0.0.9",
+    "mpx-eslint-parser": "^0.0.13",
     "vue-eslint-parser": "^10.1.3"
   }
 }
