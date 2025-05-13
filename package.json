@@ -19,6 +19,7 @@
     "watch": "tsup --watch",
     "lint": "eslint",
     "test": "vitest",
+    "prepack": "nr build",
     "release": "bumpp && pnpm publish"
   },
   "repository": {
