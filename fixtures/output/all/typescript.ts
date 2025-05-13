@@ -11,7 +11,6 @@ const people: Person[] = [
   age: 35 }
 ];
 
-// eslint-disable-next-line no-console
 const log = console.log
 
 // Use a for...of loop to iterate over the array
