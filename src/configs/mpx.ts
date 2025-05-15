@@ -58,7 +58,6 @@ export async function mpx(
       },
       rules: {
         'no-undef': 'off',
-        camelcase: ['error', { allow: ['__mpx_mode__', '__mpx_env__'] }],
         ...overrides,
       }
     }
