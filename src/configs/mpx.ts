@@ -57,6 +57,7 @@ export async function mpx(
         },
       },
       rules: {
+        'no-undef': options.typescript ? 'off' : 'error',
         ...overrides,
       }
     }
