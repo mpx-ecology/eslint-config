@@ -33,6 +33,7 @@ export async function mpx(
       languageOptions: {
         globals: {
           defineExpose: 'readonly',
+          defineOptions: 'readonly',
           defineProps: 'readonly',
         },
       },
