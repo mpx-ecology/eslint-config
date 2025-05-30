@@ -35,6 +35,7 @@ export async function mpx(
           defineExpose: 'readonly',
           defineOptions: 'readonly',
           defineProps: 'readonly',
+          useContext: 'readonly'
         },
       },
       plugins: {
