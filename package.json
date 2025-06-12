@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^8.27.0",
-    "@typescript-eslint/parser": "^5.33.1",
+    "@typescript-eslint/parser": "^8.34.0",
     "eslint-flat-config-utils": "^2.0.1",
     "eslint-plugin-mpx": "0.2.22",
     "eslint-plugin-n": "^17.17.0",
