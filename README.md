@@ -25,6 +25,52 @@ export default mpxConfig(
 )
 ```
 
+### modify rules
+
+```js
+{
+  mpx: true,
+  typescript: {
+    overrides: {
+      'ts/ban-ts-comment': 0
+    }
+  },
+}
+// or
+{
+  mpx: true,
+  typescript: true
+},
+{
+  rules: {
+    'ts/ban-ts-comment': 0
+  }
+}
+```
+
+### ignores
+
+ignores只针对每个花阔号里的规则
+```js
+{
+  mpx: true,
+  typescript: true
+  ignores: [
+    "node_modules/**"
+    "src/xxx"
+  ]
+},
+{
+  ignores: [
+    "node_modules/**"
+    "src/xxx"
+  ],
+  rules: {
+    'ts/ban-ts-comment': 0
+  }
+}
+```
+
 ### Add script for package.json
 
 For example:
