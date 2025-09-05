@@ -11,7 +11,7 @@ import {
   ignores,
   typescript
 } from './configs'
-import { getOverrides, resolveSubOptions } from './utils'
+import { getOverrides, renameRules, resolveSubOptions } from './utils'
 const VuePackages = [
   'vue',
   'nuxt',
@@ -56,11 +56,22 @@ export function mpxConfig(
     }))
   }
 
+  // 处理用户传入的规则是@typescript-eslint替换成ts
+  const renamedUserConfigs = userConfigs.map((item: any) => {
+    if(item.rules) {
+      item.rules = renameRules(
+        item.rules,
+        { "@typescript-eslint": "ts" }
+      )
+    }
+    return item
+  })
+
   let composer = new FlatConfigComposer<TypedFlatConfigItem, ConfigNames>()
   composer = composer
     .append(
       ...configs,
-      ...userConfigs as any
+      ...renamedUserConfigs as any
     )
   return composer
 }
